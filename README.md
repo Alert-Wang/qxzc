@@ -1,3 +1,5 @@
+## qxzc
+
 ### Introduction
 
 A network crawler from https://www.sge.com.cn
@@ -10,7 +12,7 @@ init/hist/live mode share same cmd, and recovery mode would need -f in some time
 
 DELAY=1 Day
 
-### setup
+### Setup
 python3.6+  
 for python dependency run `pip install -r requirements.txt`
 
