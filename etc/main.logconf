@@ -1,0 +1,27 @@
+[loggers]
+keys = root
+
+[handlers]
+keys = console, file
+
+[formatters]
+keys = normal
+
+[logger_root]
+level = DEBUG
+handlers = file, console
+
+[handler_file]
+class = logging.handlers.RotatingFileHandler
+level = DEBUG
+formatter = normal
+args = ('./main.log', 'a', 1024*1024*1024*2, 10)
+
+[handler_console]
+class = StreamHandler
+level = DEBUG
+formatter = normal
+args = (sys.stdout,)
+
+[formatter_normal]
+format = %(asctime)s - %(name)7s - %(levelname)s - %(message)s
