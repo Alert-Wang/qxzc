@@ -2,11 +2,11 @@
 
 ### Introduction
 
-A network crawler from https://www.sge.com.cn
+A web crawler from https://www.sge.com.cn
 
 there 2 runner in this project:
 - meta: for crawling the relatioship between date and url.
-- main: from downloading the data from the specific url in meta.
+- main: downloading the data from the specific url in meta.
 
 init/hist/live mode share same cmd, and recovery mode would need -f in some time as ypu need.
 
