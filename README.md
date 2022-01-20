@@ -20,6 +20,9 @@ the program will store the meta data into csv first
 then the main worker read the meta data, select the dates from user end input
 the main worker will download the final data on the page.
 
+worker.py is your entry points   
+use `python worker.py -h` to get more help.
+
 **init/live**   
 only meta worker: `python worker.py -r meta`  
 only main worker: `python worker.py -r main`   or `python worker.py -r main -s 20220101 -e 20220120`  
@@ -33,6 +36,7 @@ note:
 5. worker.py is the only entry piont.
 
 **recovery**  
-should add `-f` option when you operate. it scan on all of page, and save the data
+same cmd with above, better sepcify -s/-e.
+should add `-f` option when you operate. it will scan on all of the pages, and save the data
 into meta if there any missing.
 
